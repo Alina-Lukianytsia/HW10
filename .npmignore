@@ -1,6 +1,7 @@
 test/
 src/
 .idea/
+__tests__/
 
 .eslintignore
 .eslintrc
