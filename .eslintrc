@@ -1,0 +1,34 @@
+{
+  "root": true,
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "parserOptions": {
+        "project": ["./tsconfig.json"]
+      }
+    }
+  ],
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "airbnb-typescript"
+  ],
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "linebreak-style": 0,
+    "@typescript-eslint/dot-notation": "off",
+    "@typescript-eslint/no-implied-eval": "off",
+    "@typescript-eslint/no-throw-literal": "off",
+    "react/jsx-filename-extension": "off",
+    "import/extensions": "off",
+    "import/no-extraneous-dependencies": "off",
+    "@typescript-eslint/no-var-requires": "off"
+  },
+  "globals": {
+    "window": true,
+    "document": true
+  }
+}

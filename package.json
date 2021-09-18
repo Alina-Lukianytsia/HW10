@@ -1,0 +1,53 @@
+{
+  "name": "jsmp-infra-alina_lukianytsia-magic_ball",
+  "version": "1.0.0",
+  "description": "MagicBall - can give you an answer to any question except of alternative.",
+  "main": "dist/magic-ball.js",
+  "types": "dist/magic-ball.d.ts",
+  "prepublishOnly": "npm run clean && npm run compile && npm run test:unit",
+  "scripts": {
+    "dev": "webpack --env development --watch",
+    "compile": "webpack --env production",
+    "test:unit": "jest",
+    "clean": "rimraf ./dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Alina-Lukianytsia/HW10.git"
+  },
+  "keywords": [
+    "magicBall",
+    "randomAnswer",
+    "getRandomAnswer",
+    "getAnswer",
+    "answer"
+  ],
+  "author": "Alina Lukianytsia <Alina_Lukianytsia@epam.com>",
+  "license": "ISC",
+  "dependencies": {
+    "lodash.random": "3.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.15.5",
+    "@babel/preset-env": "7.15.6",
+    "@babel/preset-typescript": "7.15.0",
+    "@types/jest": "27.0.1",
+    "@types/lodash.random": "3.2.6",
+    "@typescript-eslint/eslint-plugin": "4.31.1",
+    "@typescript-eslint/parser": "4.31.1",
+    "babel-jest": "27.2.0",
+    "babel-loader": "8.2.2",
+    "eslint": "7.32.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-config-airbnb-typescript": "14.0.0",
+    "eslint-webpack-plugin": "3.0.1",
+    "jest": "27.2.0",
+    "jsdoc-babel": "0.5.0",
+    "rimraf": "3.0.2",
+    "ts-jest": "27.0.5",
+    "ts-loader": "9.2.5",
+    "typescript": "4.4.3",
+    "webpack": "5.53.0",
+    "webpack-cli": "4.8.0"
+  }
+}
