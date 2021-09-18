@@ -4,12 +4,12 @@
   "description": "MagicBall - can give you an answer to any question except of alternative.",
   "main": "dist/magic-ball.js",
   "types": "dist/magic-ball.d.ts",
-  "prepublish": "npm run clean && npm run compile && npm run test:unit",
   "scripts": {
     "dev": "webpack --env development --watch",
     "compile": "webpack --env production",
     "test:unit": "jest",
-    "clean": "rimraf ./dist/"
+    "clean": "rimraf ./dist/",
+    "prepublishOnly": "npm run clean && npm run compile && npm run test:unit"
   },
   "repository": {
     "type": "git",
