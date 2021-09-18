@@ -2,11 +2,11 @@ const path = require('path');
 const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = ({ development }) => ({
-    entry: './src/magic-ball.ts',
+    entry: './src/index.ts',
     devtool: development ? 'inline-source-map' : false,
     mode: development ? 'development' : 'production',
     output: {
-        filename: 'magic-ball.js',
+        filename: 'index.js',
         path: path.resolve(__dirname, 'dist'),
         library: 'jsmp-infra-alina_lukianytsia-magic_ball',
         libraryExport: 'default',

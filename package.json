@@ -1,9 +1,9 @@
 {
   "name": "jsmp-infra-alina_lukianytsia-magic_ball",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "MagicBall - can give you an answer to any question except of alternative.",
-  "main": "dist/magic-ball.js",
-  "types": "dist/magic-ball.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "dev": "webpack --env development --watch",
     "compile": "webpack --env production",
