@@ -1,6 +1,6 @@
 {
   "name": "jsmp-infra-alina_lukianytsia-magic_ball",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "MagicBall - can give you an answer to any question except of alternative.",
   "main": "dist/magic-ball.js",
   "types": "dist/magic-ball.d.ts",
