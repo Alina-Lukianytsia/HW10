@@ -8,4 +8,5 @@
  * const answer = getAnswer();
  * // => answer='It is decidedly so'
  **/
-export declare function getAnswer(): string;
+declare function getAnswer(): string;
+export default getAnswer;

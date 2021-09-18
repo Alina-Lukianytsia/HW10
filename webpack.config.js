@@ -8,7 +8,7 @@ module.exports = ({ development }) => ({
     output: {
         filename: 'magic-ball.js',
         path: path.resolve(__dirname, 'dist'),
-        library: 'magic-ball',
+        library: 'jsmp-infra-alina_lukianytsia-magic_ball',
         libraryExport: 'default',
         libraryTarget: 'umd',
         umdNamedDefine: true,

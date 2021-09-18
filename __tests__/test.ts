@@ -1,6 +1,5 @@
-import { getAnswer } from '../src/magic-ball';
+import getAnswer from '../dist/magic-ball';
 import { DEFAULT_ANSWERS } from '../src/answers.json';
-
 
 describe('getAnswer method:', () => {
   test('type of received value', () => {
