@@ -8,4 +8,4 @@
  * const answer = getAnswer();
  * // => answer='It is decidedly so'
  **/
-export declare const getAnswer: () => string;
+export declare function getAnswer(): string;

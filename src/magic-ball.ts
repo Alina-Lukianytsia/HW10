@@ -11,4 +11,7 @@ import { DEFAULT_ANSWERS } from './answers.json';
  * const answer = getAnswer();
  * // => answer='It is decidedly so'
  **/
-export const getAnswer = (): string => DEFAULT_ANSWERS[random(DEFAULT_ANSWERS.length - 1)];
+export function getAnswer(): string {
+  return DEFAULT_ANSWERS[random(DEFAULT_ANSWERS.length - 1)];
+}
+
