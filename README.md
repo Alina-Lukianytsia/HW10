@@ -13,7 +13,7 @@ npm install jsmp-infra-alina_lukianytsia-magic_ball
 #### ES6
 
 ```js
-import getAnswer from 'jsmp-infra-alina_lukianytsia-magic_ball';
+import { getAnswer } from 'jsmp-infra-alina_lukianytsia-magic_ball';
 
 const answer = getAnswer(); // => answer = "It is decidedly so"
 ```
@@ -21,7 +21,7 @@ const answer = getAnswer(); // => answer = "It is decidedly so"
 #### Node
 
 ```js
-const getAnswer = require('jsmp-infra-alina_lukianytsia-magic_ball');
+const { getAnswer } = require('jsmp-infra-alina_lukianytsia-magic_ball');
 
 const answer = getAnswer(); // => answer = "It is decidedly so"
 ```
