@@ -13,25 +13,31 @@ npm install jsmp-infra-alina_lukianytsia-magic_ball
 #### ES6
 
 ```js
-import { getAnswer } from 'jsmp-infra-alina_lukianytsia-magic_ball';
 
-const answer = getAnswer(); // => answer = "It is decidedly so"
+import { MagicBall } from 'jsmp-infra-alina_lukianytsia-magic_ball';
+
+// with default values:
+const magicBall = new MagicBall();
+const answer = magicBall.getAnswer(); // => answer = "It is decidedly so"
+
+// with set values:
+const magicBall = new MagicBall(['yes', 'no']);
+const answer = magicBall.getAnswer(); // => answer = "yes"
 ```
 
 #### Node
 
 ```js
-const { getAnswer } = require('jsmp-infra-alina_lukianytsia-magic_ball');
+const { MagicBall } = require('jsmp-infra-alina_lukianytsia-magic_ball');
 
-const answer = getAnswer(); // => answer = "It is decidedly so"
-```
+// with default values:
+const magicBall = new MagicBall();
+const answer = magicBall.getAnswer(); // => answer = "It is decidedly so"
 
-#### Browser
+// with set values:
+const magicBall = new MagicBall(['yes', 'no']);
+const answer = magicBall.getAnswer(); // => answer = "yes"
 
-```html
-<script>
-    jsmp-infra-alina_lukianytsia-magic_ball.getAnswer();
-</script>
 ```
 
 ## Contributing

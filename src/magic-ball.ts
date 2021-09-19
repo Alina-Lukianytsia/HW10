@@ -2,18 +2,38 @@ import random from 'lodash.random/index.js';
 import { DEFAULT_ANSWERS } from './answers.json';
 
 /**
- * @description
- * Generates random answer.
+ * @classdesc
+ * Class creates random answers generator with custom or default answers
  *
- * @returns {string}
  *
  * @example
- * const answer = getAnswer();
- * // => answer='It is decidedly so'
- **/
-function getAnswer(): string {
-  return DEFAULT_ANSWERS[random(DEFAULT_ANSWERS.length - 1)];
+ * - with default values:
+ * const magicBall = new MagicBall();
+ * const answer = magicBall.getAnswer(); // => answer='It is decidedly so'
+ *
+ * - with custom values:
+ * const magicBall = new MagicBall(['yes', 'no']);
+ * const answer = magicBall.getAnswer(); // => answer='yes'
+ */
+class MagicBall {
+  #answers: string[];
+
+  /**
+   * Create a MagicBall
+   * @param { string[] | undefined } answers - Sets the answers array, not mandatory.
+   * If is not passed - will be used DEFAULT_ANSWERS array.
+   */
+  constructor(answers?: string[] | undefined) {
+    this.#answers = answers || DEFAULT_ANSWERS;
+  }
+
+  /**
+   *@description
+   * Generates the random answer
+   *
+   * @return {string} Random answer.
+   */
+  getAnswer = ():string => this.#answers[random(this.#answers.length - 1)];
 }
 
-export default getAnswer;
-
+export default MagicBall;

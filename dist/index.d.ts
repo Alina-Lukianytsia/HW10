@@ -1,6 +1,6 @@
-import getAnswer from './magic-ball';
-export { getAnswer };
+import MagicBall from './magic-ball';
+export { MagicBall };
 declare const _default: {
-    getAnswer: typeof getAnswer;
+    MagicBall: typeof MagicBall;
 };
 export default _default;

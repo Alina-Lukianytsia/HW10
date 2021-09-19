@@ -1,5 +1,5 @@
-import getAnswer from './magic-ball';
+import MagicBall from './magic-ball';
 
-export { getAnswer };
+export { MagicBall };
 
-export default { getAnswer };
+export default { MagicBall };
