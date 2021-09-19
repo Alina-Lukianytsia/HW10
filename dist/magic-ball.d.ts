@@ -16,10 +16,10 @@ declare class MagicBall {
     #private;
     /**
      * Create a MagicBall
-     * @param { string[] | undefined } answers - Sets the answers array, not mandatory.
+     * @param { string[] } answers - Sets the answers array, not mandatory.
      * If is not passed - will be used DEFAULT_ANSWERS array.
      */
-    constructor(answers?: string[] | undefined);
+    constructor(answers?: string[]);
     /**
      *@description
      * Generates the random answer
